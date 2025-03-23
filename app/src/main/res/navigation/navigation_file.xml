@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_file"
+    app:startDestination="@id/encounterFragment">
+
+    <fragment
+        android:id="@+id/encounterFragment"
+        android:name="com.example.mobileassessment.EncounterFragment"
+        android:label="fragment_encounter"
+        tools:layout="@layout/fragment_encounter" />
+    <fragment
+        android:id="@+id/dungeonFragment"
+        android:name="com.example.mobileassessment.DungeonFragment"
+        android:label="fragment_dungeon"
+        tools:layout="@layout/fragment_dungeon" />
+    <fragment
+        android:id="@+id/upgradesFragment"
+        android:name="com.example.mobileassessment.UpgradesFragment"
+        android:label="fragment_upgrades"
+        tools:layout="@layout/fragment_upgrades" />
+</navigation>

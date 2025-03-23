@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currency"
+    app:startDestination="@id/currencyMenuFragment">
+
+    <fragment
+        android:id="@+id/currencyMenuFragment"
+        android:name="com.example.mobileassessment.CurrencyMenuFragment"
+        android:label="fragment_currency_menu"
+        tools:layout="@layout/fragment_currency_menu" />
+</navigation>

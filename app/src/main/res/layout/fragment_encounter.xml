@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".EncounterFragment">
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#999CD8"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progressTint="#FFC107"
+        android:scaleY="5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_of_the_current_monster"
+        android:visibility="visible"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/completeText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/pixelfontreg"
+        android:gravity="center"
+        android:text="@string/dungeon_complete"
+        android:textColor="#1B1B1B"
+        android:textSize="34sp"
+        android:visibility="gone" />
+
+</LinearLayout>

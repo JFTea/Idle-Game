@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    tools:context=".UpgradesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#999CD8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activeUpgradeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/tap_damage_upgrade"
+            android:textColor="#1B1B1B"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/activeUpgradeCostText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <LinearLayout
+                android:id="@+id/activeButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <ImageButton
+                    android:id="@+id/activeDamageUpgradeBut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FFC107"
+                    android:contentDescription="@string/active_damage_upgrade_arrow"
+                    android:src="@drawable/arrowupwardblack"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:labelFor="@id/activeDamageUpgradeBut"
+                    android:text="@string/upgrade"
+                    android:textAlignment="center"
+                    android:textColor="#1B1B1B" />
+            </LinearLayout>
+
+            <SurfaceView
+                android:id="@+id/activeView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/activeView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/activeView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/activeView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/activeView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:background="#999CD8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tickUpgradeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/time_damage_upgrade"
+            android:textColor="#1B1B1B"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tickUpgradeCostText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tickButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/tickDamageUpgradeBut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:contentDescription="@string/time_damage_upgrade_arrow"
+                    android:src="@drawable/arrowupwardblack" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:labelFor="@id/tickDamageUpgradeBut"
+                    android:text="@string/upgrade"
+                    android:textAlignment="center"
+                    android:textColor="#1B1B1B" />
+            </LinearLayout>
+
+            <SurfaceView
+                android:id="@+id/tickView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/tickView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/tickView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/tickView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+
+            <SurfaceView
+                android:id="@+id/tickView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#7275A1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

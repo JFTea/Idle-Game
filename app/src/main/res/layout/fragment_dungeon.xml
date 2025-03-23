@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DungeonFragment">
+
+    <LinearLayout
+        android:id="@+id/dungeonSelectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/easyDungeonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#999CD8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/easyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/easy_dungeon"
+                android:textColor="#1B1B1B"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/easyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checkedButton="@id/easyShort"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <RadioButton
+                    android:id="@+id/easyShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#FFC107"
+                    android:text="@string/shortDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/easyMed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/medium"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/easyLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/longDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/easyExpected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/expected_rewards_3_5_gems"
+                android:textColor="#1B1B1B"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/easySelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFC107"
+                android:text="@string/select"
+                android:textColor="#1D1D1D"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/normalDungeonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#999CD8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/normalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_dungeon"
+                android:textColor="#1B1B1B"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/normalRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checkedButton="@id/normShort"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <RadioButton
+                    android:id="@+id/normShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/shortDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/normMed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/medium"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/normLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/longDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/normExpected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/expected_rewards_6_10_gems"
+                android:textColor="#1B1B1B"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/normSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFC107"
+                android:text="@string/select"
+                android:textColor="#1D1D1D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hardDungeonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#999CD8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hard_dungeon"
+                android:textColor="#1B1B1B"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/hardRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checkedButton="@id/hardShort"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
+
+                <RadioButton
+                    android:id="@+id/hardShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/shortDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/hardMed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/medium"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/hardLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#7275A1"
+                    android:text="@string/longDun"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/hardExpected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/expected_rewards_9_15_gems"
+                android:textColor="#1B1B1B"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/hardSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFC107"
+                android:text="@string/select"
+                android:textColor="#1D1D1D" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#A64A4A4A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="200dp"
+            android:fontFamily="@font/pixelfontreg"
+            android:text="@string/loading"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/completeDungeonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SurfaceView
+            android:id="@+id/surfaceView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#999CD8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="200dp"
+            android:fontFamily="@font/pixelfontreg"
+            android:text="@string/complete_current_dungeon_before_selecting_a_new_one"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
